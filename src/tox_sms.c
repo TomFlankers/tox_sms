@@ -9,11 +9,11 @@
 #include <sodium/utils.h>
 #include <tox/tox.h>
 
-typedef struct DHT_node {
+struct DHT_node {
     const char *ip;
     uint16_t port;
     const char key_hex[TOX_PUBLIC_KEY_SIZE*2 + 1];
-} DHT_node;
+};
 
 const char *savedata_filename = "savedata.tox";
 const char *savedata_tmp_filename = "savedata.tox.tmp";
