@@ -9,7 +9,7 @@
 #include <sodium/utils.h>
 #include <tox/tox.h>
 
-typedef struct DHT_node {
+struct DHT_node {
     const char *ip;
     uint16_t port;
     const char key_hex[TOX_PUBLIC_KEY_SIZE*2 + 1];
@@ -136,7 +136,7 @@ int main()
 {
     Tox *tox = create_tox();
 
-    const char *name = "SMS GATE Bot :)";
+    const char *name = "SMS GATE Bot";
     tox_self_set_name(tox, name, strlen(name), NULL);
 
     const char *status_message = "Echoing your messages";
