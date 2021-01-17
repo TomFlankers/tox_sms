@@ -80,7 +80,7 @@ void bootstrap(Tox *tox)
         {"tox.kurnevsky.net",                  33445, "82EF82BA33445A1F91A7DB27189ECFC0C013E06E3DA71F588ED692BED625EC23"}
     };
 
-    for (size_t i = 0; i < sizeof(nodes)/sizeof(DHT_node); i ++) {
+    for (size_t i = 0; i < sizeof(nodes)/sizeof(nodes); i ++) {
         unsigned char key_bin[TOX_PUBLIC_KEY_SIZE];
         sodium_hex2bin(key_bin, sizeof(key_bin), nodes[i].key_hex, sizeof(nodes[i].key_hex)-1,
                        NULL, NULL, NULL);
