@@ -136,7 +136,7 @@ int main()
 {
     Tox *tox = create_tox();
 
-    const char *name = "SMS GATE Bot";
+    const char *name = "SMS GATE Bot :)";
     tox_self_set_name(tox, name, strlen(name), NULL);
 
     const char *status_message = "Echoing your messages";
