@@ -68,7 +68,7 @@ void update_savedata_file(const Tox *tox)
 
 void bootstrap(Tox *tox)
 {
-    DHT_node nodes[] =
+    struct DHT_node nodes[] =
     {
         {"85.143.221.42",                      33445, "DA4E4ED4B697F2E9B000EEFE3A34B554ACD3F45F5C96EAEA2516DD7FF9AF7B43"},
         {"2a04:ac00:1:9f00:5054:ff:fe01:becd", 33445, "DA4E4ED4B697F2E9B000EEFE3A34B554ACD3F45F5C96EAEA2516DD7FF9AF7B43"},
