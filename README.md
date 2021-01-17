@@ -1,2 +1,2 @@
 # tox_sms
-tox for sms bot
+tox bot for sms gate
